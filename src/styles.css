@@ -123,3 +123,164 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+/* add an amazing animation to the social icons */
+img.socialIcon:hover {
+  animation: socialIconAnimation 0.5s ease-in-out infinite alternate;
+}
+@keyframes socialIconAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  section img.background {
+    width: 100vw;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  section img.background {
+    width: 100vw;
+    height: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  section img.background {
+    width: 100vw;
+    height: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  section img.background {
+    width: 100vw;
+    height: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+  }
+}
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #bb86fc;
+  }
+
+  a:hover {
+    color: #3700b3;
+  }
+
+  hr {
+    border-color: #333;
+  }
+
+  .container .box {
+    border-color: #444;
+    background-color: #1e1e1e;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  h1,
+  h2,
+  h3,
+  p {
+    color: #e0e0e0;
+  }
+
+  li::marker {
+    color: #bb86fc;
+  }
+
+  img.socialIcon {
+    filter: invert(1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  section img.background {
+    filter: brightness(0.7);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #bb86fc;
+  }
+
+  a:hover {
+    color: #3700b3;
+  }
+
+  hr {
+    border-color: #333;
+  }
+
+  .container .box {
+    border-color: #444;
+    background-color: #1e1e1e;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  h1,
+  h2,
+  h3,
+  p {
+    color: #e0e0e0;
+  }
+
+  li::marker {
+    color: #bb86fc;
+  }
+
+  img.socialIcon {
+    filter: invert(1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  section img.background {
+    filter: brightness(0.7);
+  }
+}
